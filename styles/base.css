@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Barrio&family=Didact+Gothic&family=Erica+One&family=Permanent+Marker&display=swap");
+
+/* If google fonts breaks, we have bigger problems than relying on them for a wedding invitation */
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #0d2b29;
+  --accent1-color: #123c3a;
+  --accent2-color: #f9729f;
+  --accent3-color: #cacf05;
+  --text-color: #f2f1ec;
+  --link-color: #cafc05;
+
+  --background-color: #123c3a;
+  font-size: 24px;
+}
+
+/* Common HTML Tags */
+
+h1 {
+  color: var(--link-color);
+}
+
+h2 {
+  color: var(--primary-color);
+}
+
+p {
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+/* Header Section */
+
+header {
+  position: sticky;
+  top: 0;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  align-content: center;
+}
+
+.hook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fixed-container {
+  width: 16rem; /* Fixed width */
+  height: 200px; /* Fixed height */
+  padding: 1rem; /* Add padding to prevent text touching edges */
+  border: 2px solid #ff9100; /* Visible border */
+  overflow: hidden; /* Hide overflow to test if text fits */
+  background: #f5f5f5;
+}
+
+.headline {
+  text-align: center;
+  margin: 10px;
+}
+
+.heroline {
+  font-family: "Erica One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 9vw;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.subline {
+  font-family: "Barrio", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.5vw;
+  margin: 10px;
+  color: var(--primary-color);
+}
+
+/* Body Section */
+
+body {
+  background-color: var(--background-color);
+  text-align: center;
+}
+
+main {
+  margin: 50px 20px 50px 20px;
+}
+
+.main-content {
+  margin: 50px 20px 50px 20px;
+}
+
+.first-image {
+  width: 100%;
+}
+
+.clarifications {
+  max-width: 32rem;
+  margin: 0 auto;
+  text-align: left;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.clarifications p {
+  margin: 13px;
+}
+
+#countdown {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.erica-one-regular {
+  font-family: "Erica One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.barrio-regular {
+  font-family: "Barrio", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.didact-gothic-regular {
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img {
+  max-width: 600px;
+}
+
+footer {
+  position: fixed;
+}
