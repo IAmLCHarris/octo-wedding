@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .top-flap {
+        transition: all 0.5s ease;
+        margin: 100px;
+      }
+      .animate {
+        transform: scaleY(-1);
+      }
+    </style>
+    <title>Music and Animation Testing</title>
+  </head>
+
+  <body>
+    <img
+      src="https://s2.qwant.com/thumbr/474x237/c/8/215c636aeed5353b8fd681d9d83ac79e67ab7155b40b61f36b52da196d9c1d/OIP.xqFauC1GQ3HJZehImIIK3QHaDt.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%2Fid%2FOIP.xqFauC1GQ3HJZehImIIK3QHaDt%3Fpid%3DApi&q=0&b=1&p=0&a=0"
+    />
+
+    <audio id="music">
+      <source
+        src="media/Two Door Cinema Club - What You Know (Instrumental Original).mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <input type="range" id="slider" min="0" max="100" value="15" />
+
+    <button type="button" id="music-toggle">Toggle</button>
+
+    <div class="envelope-containter">
+      <img src="media/upperflap.png" class="top-flap" id="top-flap" />
+    </div>
+
+    <script>
+      const topFlap = document.getElementById("top-flap");
+      const musicPlayer = document.getElementById("music");
+      const volumeControl = document.getElementById("slider");
+      const musicToggle = document.getElementById("music-toggle");
+
+      musicPlayer.volume = volumeControl.value / 100;
+
+      volumeControl.oninput = function () {
+        const sliderValue = volumeControl.value / 100;
+        musicPlayer.volume = sliderValue;
+      };
+
+      topFlap.addEventListener("click", function () {
+        topFlap.classList.toggle("animate");
+        setTimeout(musicPlayer.play(), 6);
+      });
+    </script>
+  </body>
+</html>
