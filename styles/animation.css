@@ -21,6 +21,7 @@
   margin-right: 5%;
   margin-top: 25vh;
   width: auto;
+  transition: 0.3s ease;
 }
 
 .bottom-flap {
@@ -36,6 +37,10 @@
 }
 .animate {
   transform: translateX(5%) rotate(5deg);
+}
+
+.wiggle {
+  transform: rotate(2deg);
 }
 
 .fade {

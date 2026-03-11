@@ -1,5 +1,8 @@
 const overlayContainer = document.getElementById("overlay-container");
 const topFlap = document.getElementById("top-flap");
+
+const envelopeContainer = document.getElementById("envelope-container");
+
 const musicPlayer = document.getElementById("music");
 const volumeControl = document.getElementById("slider");
 const musicToggle = document.getElementById("music-toggle");
@@ -12,6 +15,15 @@ volumeControl.oninput = function () {
   musicPlayer.volume = sliderValue;
 };
 
+function wiggle() {
+  envelopeContainer.classList.toggle("wiggle");
+  setTimeout(() => {
+    envelopeContainer.classList.toggle("wiggle");
+  }, 100);
+}
+
+wiggleKill = setInterval(wiggle, 1500);
+
 overlayContainer.addEventListener("click", function () {
   topFlap.classList.toggle("animate");
   musicPlayer.play();
@@ -22,6 +34,7 @@ overlayContainer.addEventListener("click", function () {
   setTimeout(() => {
     overlayContainer.style.display = "none";
   }, 1600);
+  clearInterval(wiggleKill);
 });
 
 musicToggle.addEventListener("click", function () {
