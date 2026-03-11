@@ -5,12 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Bodorrio Pulpo</title>
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/large.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/animation.css" />
   </head>
   <body>
+    <div id="overlay-container">
+      <div class="envelope-container" id="envelope-container">
+        <img src="media/inviteTear2.png" class="bottom-flap" />
+        <img src="media/inviteTear1.png" class="top-flap" id="top-flap" />
+      </div>
+    </div>
+
     <header>
+      <audio id="music">
+        <source
+          src="media/Two Door Cinema Club - What You Know (Instrumental Original).mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+
+      <input type="range" id="slider" min="0" max="100" value="0" />
+
+      <button type="button" id="music-toggle">Toggle</button>
+
       <div class="hook">
         <img src="https://placehold.co/50.png" />
         <div class="headline">
@@ -62,5 +82,6 @@
       <p id="countdown"></p>
     </main>
     <script src="scripts/countdown.js"></script>
+    <script src="scripts/animation.js"></script>
   </body>
 </html>
