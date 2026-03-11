@@ -5,6 +5,7 @@
   height: 100%;
 
   background-image: url("/media/background.png");
+  background-color: var(--secondary-color);
   z-index: 1;
 
   transition: opacity 1s;
