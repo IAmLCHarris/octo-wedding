@@ -4,13 +4,21 @@
   width: 100%;
   height: 100%;
 
-  background-image: url("../media/background.png");
+  background-image: url("../media/splashscreen.jpg");
   background-position-x: center;
   background-position-y: 60%;
+
   background-color: var(--secondary-color);
   z-index: 1;
 
   transition: opacity 1s;
+}
+
+#blur {
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(3px);
+  height: 100%;
 }
 
 .envelope-container {
@@ -27,14 +35,15 @@
 }
 
 .bottom-flap {
-  grid-area: 1 / 1 / 1 / 1;
   width: 100%;
-  z-index: 1;
+  grid-area: 1 / 1 / 1 / 1;
+  z-index: 2;
 }
 
 .top-flap {
   width: 100%;
   grid-area: 1 / 1 / 1 / 1;
+  z-index: 2;
   transition: all 0.5s ease;
 }
 .animate {

@@ -2,16 +2,27 @@
 
 /* If google fonts breaks, we have bigger problems than relying on them for a wedding invitation */
 
+/* Revised Colors */
+
+/* 
+0F0F10 -Main Black
+5E17EB -Purplish Blue
+
+FED06A -Electric Yellow
+10E5FD -Neon Blue
+FA1EFD -Burning Magenta
+*/
+
 :root {
   --primary-color: #ffffff;
-  --secondary-color: #0d2b29;
-  --accent1-color: #123c3a;
-  --accent2-color: #f9729f;
-  --accent3-color: #cacf05;
+  --secondary-color: #5e17eb;
+  --accent1-color: #fa1efd;
+  --accent2-color: #10e5fd;
+  --accent3-color: #fed06a;
   --text-color: #f2f1ec;
-  --link-color: #cafc05;
+  --link-color: #fed06a;
 
-  --background-color: #123c3a;
+  --background-color: #0f0f10;
   font-size: 24px;
 }
 
@@ -100,7 +111,7 @@ main {
   width: 100%;
 }
 
-.clarifications {
+#clarifications {
   max-width: 32rem;
   margin: 0 auto;
   text-align: left;
@@ -109,7 +120,7 @@ main {
   font-style: normal;
 }
 
-.clarifications p {
+#clarifications p {
   margin: 13px;
 }
 
@@ -141,6 +152,10 @@ main {
   font-family: "Didact Gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+#dress-code {
+  font-family: "Didact Gothic", sans-serif;
 }
 
 img {
