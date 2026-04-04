@@ -27,13 +27,19 @@
           type="audio/mpeg"
         />
       </audio>
-
-      <input type="range" id="slider" min="0" max="100" value="15" />
-
-      <button type="button" id="music-toggle">Toggle</button>
-
+      <div class="music-control">
+        <img type="button" id="music-toggle" src="media/musicnote.png" />
+        <input
+          type="range"
+          orient="vertical"
+          id="slider"
+          min="0"
+          max="100"
+          value="15"
+        />
+      </div>
       <div class="hook">
-        <img src="https://placehold.co/50.png" />
+        <!-- <img src="https://placehold.co/50.png" /> -->
         <div class="headline">
           <a
             class="heroline"
@@ -42,7 +48,6 @@
           >
           <h2 class="subline">Pulpo, Amor & Rock'n'Roll</h2>
         </div>
-        <img src="https://placehold.co/50.png" />
       </div>
     </header>
 
