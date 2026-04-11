@@ -54,6 +54,28 @@ header {
   align-content: center;
 }
 
+.music-control {
+  position: absolute;
+  top: 50%;
+  right: 2vw;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#slider {
+  writing-mode: vertical-lr;
+  direction: rtl;
+  appearance: slider-vertical;
+  height: 100px;
+}
+
+#music-toggle {
+  max-height: 8vw;
+  font-family: "Didact Gothic", sans-serif;
+}
+
 .hook {
   display: flex;
   justify-content: center;
@@ -108,6 +130,10 @@ main {
 }
 
 .first-image {
+  width: 100%;
+}
+
+#image-content {
   width: 100%;
 }
 
