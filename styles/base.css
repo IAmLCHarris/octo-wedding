@@ -133,6 +133,10 @@ main {
   width: 100%;
 }
 
+#image-content {
+  width: 100%;
+}
+
 #clarifications {
   max-width: 32rem;
   margin: 0 auto;
