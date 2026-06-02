@@ -7,6 +7,8 @@ const musicPlayer = document.getElementById("music");
 const volumeControl = document.getElementById("slider");
 const musicToggle = document.getElementById("music-toggle");
 
+const headline = document.getElementById("headline");
+
 musicPlayer.volume = volumeControl.value / 100;
 var isPlaying = true;
 
@@ -41,8 +43,12 @@ musicToggle.addEventListener("click", function () {
   if (isPlaying == true) {
     isPlaying = false;
     musicPlayer.pause();
+    musicToggle.src = "media/musicnotecrossed.png";
   } else {
     isPlaying = true;
     musicPlayer.play();
+    musicToggle.src = "media/musicnote.png";
   }
 });
+
+headline.onscroll = function () {};
