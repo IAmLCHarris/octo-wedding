@@ -34,8 +34,8 @@
       <div class="hook">
         <!-- <img src="https://placehold.co/50.png" /> -->
         <div class="headline">
-          <h1 class="heroline">Pulpo Fest</h1>
-          <h2 class="subline">Pulpo, Amor & Rock'n'Roll</h2>
+          <h1 id="heroline">Pulpo Fest</h1>
+          <h2 id="subline">Pulpo, Amor & Rock'n'Roll</h2>
         </div>
       </div>
     </header>
@@ -80,8 +80,37 @@
 
       <p id="countdown"></p>
       <h2 class="erica-one-regular">BodaFest Cristina y Daniel</h2>
-      <p>02 jul 2027, 12:00</p>
-      <p>Finca A Leira 116 , Carballal 3, 27619, Lugo, España</p>
+      <p>10 jul 2027, 12:00</p>
+      <p>Camiño Real, 22, 15838 Negreira, A Coruña</p>
+      <!-- <p>Finca A Leira 116 , Carballal 3, 27619, Lugo, España</p> -->
+
+      <!-- <iframe
+        width="600"
+        height="450"
+        style=""
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe> -->
+      <iframe
+        id="map"
+        width="100%"
+        height="450"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2921.8923069296347!2d-8.784765471966544!3d42.917312185750866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2ee6d254c6aaab%3A0x3f0929084495f2d5!2sA%20Finca%20Real%20(Galicia)!5e0!3m2!1sen!2ses!4v1780521491009!5m2!1sen!2ses"
+        allowfullscreen
+      >
+        <!-- If I'm not being paid for making this, there's not a chance the client 
+             is paying for an actual web service with a backend for env variables. 
+             This means the API key has to be in the public repository of this project.
+             I do not like this! I do not want this! It's not a secure way of doing things!
+             What I can do about this, and have, is to restrict where the key can be used 
+             so that it's not useful if copied and "stolen". I acknowledge there are better
+             ways to do this, but this is the cost when your favor to someone else is 
+             taken advantage of.     
+             -->
+      </iframe>
+
       <p>Confirmad si venís por favor</p>
       <a
         href="https://cristinapp1985.wixsite.com/bodorrio-pulpo/detalles-y-registro/bodafest-cristina-y-daniel"
@@ -119,25 +148,11 @@
         <hr />
         <h2 class="barrio-regular">Música y Acción</h2>
         <hr />
-        <p>placeholder</p>
-
-        <!-- <div>
-          <img
-            class="image-content"
-            src="media/octodj.png"
-            alt="An AI Generated Image"
-          />
-        </div> -->
       </div>
       <h2 class="barrio-regular">
         ¡Vémonos no noso festival!(langostino en mano)
       </h2>
-      <!-- <img
-        class="image-content"
-        src="media/poster.png"
-        alt="An AI Generated Image"
-      />
-    </main> -->
+    </main>
     <script src="scripts/countdown.js"></script>
     <script src="scripts/animation.js"></script>
   </body>

@@ -96,22 +96,24 @@ header {
   margin: 10px;
 }
 
-.heroline {
+#heroline {
   font-family: "Erica One", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 9vw;
   margin: 10px;
   text-decoration: none;
+  transition: 0.3s ease;
 }
 
-.subline {
+#subline {
   font-family: "Barrio", system-ui;
   font-weight: 400;
   font-style: normal;
   font-size: 3.5vw;
   margin: 10px;
   color: var(--primary-color);
+  transition: 0.3s ease;
 }
 
 /* Body Section */
@@ -123,6 +125,10 @@ body {
 
 main {
   margin: 50px 20px 50px 20px;
+}
+
+hr {
+  max-width: 900px;
 }
 
 .main-content {
@@ -154,6 +160,11 @@ main {
   font-family: "Permanent Marker", cursive;
   font-weight: 400;
   font-style: normal;
+}
+
+#map {
+  max-width: 700px;
+  border: 0;
 }
 
 .erica-one-regular {

@@ -7,7 +7,8 @@ const musicPlayer = document.getElementById("music");
 const volumeControl = document.getElementById("slider");
 const musicToggle = document.getElementById("music-toggle");
 
-const headline = document.getElementById("headline");
+const heroline = document.getElementById("heroline");
+const subline = document.getElementById("subline");
 
 musicPlayer.volume = volumeControl.value / 100;
 var isPlaying = true;
@@ -51,4 +52,9 @@ musicToggle.addEventListener("click", function () {
   }
 });
 
-headline.onscroll = function () {};
+window.onscroll = function () {
+  if (window.innerWidth >= 600) {
+    heroline.style.fontSize = "5vw";
+    subline.style.fontSize = "2vw";
+  }
+};
